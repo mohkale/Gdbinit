@@ -104,7 +104,7 @@ set $64BITS = 0
 
 set confirm off
 set verbose off
-set history filename ~/.gdb_history
+set history filename ~/.cache/gdb_history
 set history save
 
 set output-radix 0x10
@@ -210,7 +210,7 @@ end
 # this way anyone can have their custom prompt - argp's idea :-)
 # can also be used to redefine anything else in particular the colors aka theming
 # just remap the color variables defined above
-source ~/.gdbinit.local
+source ~/.config/gdb/mammon.local
 
 # can't use the color functions because we are using the set command
 if $COLOREDPROMPT == 1
